@@ -12,8 +12,8 @@ list = []
 
 dset = datasets.FashionMNIST('../data', train=True, download=True, transform=transforms.ToTensor())
 for i in range(len(dset)):
-    #if :
-        #list.append(dset[i])
+    if dset[i][1] == 0 or (2 <= dset[i][1] <= 4) or dset[i][1] == 6:
+        list.append(dset[i])
 with open('train.pickle','wb') as web:
     pickle.dump(list, web)
 
