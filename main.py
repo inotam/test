@@ -1,7 +1,6 @@
 import torch
 import argparse
 import torchvision
-import
 
 parser = argparse.ArgumentParser(description='This script is ...')
 
